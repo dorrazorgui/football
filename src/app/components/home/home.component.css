@@ -1,0 +1,22 @@
+.competition-link {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 1px;
+  text-align: center;
+  color: rgba(255,255,255, 0.8);
+}
+
+.competition-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20%;
+  margin: 8px auto 0;
+  background-color: #5E8C30;
+  transition: width 250ms;
+}
+
+.competition-link:hover::after {
+  width: 60%;
+}
